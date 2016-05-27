@@ -47,7 +47,7 @@ onece ltsURL slackURL old = do
       getChannel = "haskell"
     , getUserName = "lts-bot"
     , getText = "lts の ばーじょんが あがったぞ！,\n" ++ old ++ " ---> " ++ new
-    , getIconEmoji = ":abe:" })
+    , getIconEmoji = ":smile:" })
   putStrLn $ old ++ " ---> " ++ new
   threadDelay $ 10 * 60 * 1000 * 1000 -- maikuro byou
   return new
